@@ -6,7 +6,7 @@ The following was discovered as part of building this project:
 # Getting Started
 
 ### Demo
-* [Swagger UI]http://localhost:9099/dtmm-api/swagger-ui/index.html#/)
+* [Swagger UI](http://localhost:9099/dtmm-api/swagger-ui/index.html#/)
 
 ### Reference Documentation
 For further reference, please consider the following sections:
