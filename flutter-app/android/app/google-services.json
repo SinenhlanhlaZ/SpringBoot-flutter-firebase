@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "349157902224",
+    "project_id": "springbootflutterfirebase",
+    "storage_bucket": "springbootflutterfirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349157902224:android:e8c03f62fa50c219415515",
+        "android_client_info": {
+          "package_name": "com.zamambo.testapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDpy7puikk9DcmPeJK9jLJpXGZ_gLM3f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349157902224:android:bae5bb30f855457d415515",
+        "android_client_info": {
+          "package_name": "com.zamambo.testapp.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDpy7puikk9DcmPeJK9jLJpXGZ_gLM3f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
