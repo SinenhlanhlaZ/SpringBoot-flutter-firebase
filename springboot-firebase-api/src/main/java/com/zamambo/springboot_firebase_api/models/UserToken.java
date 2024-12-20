@@ -11,6 +11,7 @@ public class UserToken {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long userId;
 
+    private String userGuid;
     private String fcmToken;
 
     public long getUserId() {
@@ -27,5 +28,22 @@ public class UserToken {
 
     public void setFcmToken(String fcmToken) {
         this.fcmToken = fcmToken;
+    }
+
+    public String getUserGuid() {
+        return userGuid;
+    }
+
+    public void setUserGuid(String userGuid) {
+        this.userGuid = userGuid;
+    }
+
+    @Override
+    public String toString() {
+        return "UserToken{" +
+                "userId=" + userId +
+                ", userGuid='" + userGuid + '\'' +
+                ", fcmToken='" + fcmToken + '\'' +
+                '}';
     }
 }
