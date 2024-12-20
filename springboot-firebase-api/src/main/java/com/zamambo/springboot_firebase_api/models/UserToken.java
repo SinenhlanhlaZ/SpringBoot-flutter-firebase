@@ -3,14 +3,29 @@ package com.zamambo.springboot_firebase_api.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import lombok.Data;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
 
 @Entity
-@Data
 public class UserToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String userId;
+    private long userId;
+
     private String fcmToken;
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public String getFcmToken() {
+        return fcmToken;
+    }
+
+    public void setFcmToken(String fcmToken) {
+        this.fcmToken = fcmToken;
+    }
 }

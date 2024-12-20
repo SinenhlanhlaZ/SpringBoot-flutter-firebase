@@ -13,7 +13,7 @@ public class FirebaseMessagingService {
     @Autowired
     private UserTokenRepo userTokenRepository;
 
-    public String sendMessageToUser(String userId, String title, String body) {
+    public String sendMessageToUser(long userId, String title, String body) {
         // Retrieve the token for the user
         UserToken userToken = userTokenRepository.findByUserId(userId);
 
@@ -35,7 +35,7 @@ public class FirebaseMessagingService {
             String response = FirebaseMessaging.getInstance().send(message);
             return "Message sent: " + response;
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             return "Failed to send message";
         }
     }

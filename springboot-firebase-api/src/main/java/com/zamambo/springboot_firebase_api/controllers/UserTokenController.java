@@ -15,7 +15,7 @@ public class UserTokenController {
     private UserTokenRepo userTokenRepository;
 
     @PostMapping("/save-token")
-    public String saveToken(@RequestParam String userId, @RequestParam String token) {
+    public String saveToken(@RequestParam long userId, @RequestParam String token) {
         UserToken userToken = new UserToken();
         userToken.setUserId(userId);
         userToken.setFcmToken(token);

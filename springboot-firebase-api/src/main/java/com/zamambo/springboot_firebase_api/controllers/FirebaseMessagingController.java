@@ -15,7 +15,7 @@ public class FirebaseMessagingController {
     private FirebaseMessagingService firebaseMessagingService;
 
     @PostMapping("/send-to-user")
-    public String sendMessageToUser(@RequestParam String userId, @RequestParam String title, @RequestParam String body) {
+    public String sendMessageToUser(@RequestParam long userId, @RequestParam String title, @RequestParam String body) {
         return firebaseMessagingService.sendMessageToUser(userId, title, body);
     }
 }
