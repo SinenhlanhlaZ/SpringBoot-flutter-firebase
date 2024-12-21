@@ -2,6 +2,7 @@ package com.zamambo.springboot_firebase_api.services;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.Message;
+import com.google.firebase.messaging.Notification;
 import com.zamambo.springboot_firebase_api.models.UserToken;
 import com.zamambo.springboot_firebase_api.repository.UserTokenRepo;
 import org.slf4j.Logger;
@@ -26,9 +27,17 @@ public class FirebaseMessagingService {
 
         String token = userToken.getFcmToken();
 
+        // setting up notification tray for display on mobile
+        Notification notification = Notification
+                .builder()
+                .setTitle(title)
+                .setBody(body)
+                .build();
+
         // Create the message
         Message message = Message.builder()
                 .setToken(token)
+                .setNotification(notification)
                 .putData("title", title)
                 .putData("body", body)
                 .build();
